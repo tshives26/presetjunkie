@@ -139,7 +139,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://bitcoin.org/en/" id="bitcoin" 
+                href="bc1qvlyfgu3spmthgec5zl5ash93zda644p5adfv89" id="bitcoin" 
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -154,7 +154,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://ethereum.org/en/" id="ethereum"
+                href="0x3C8C3c5DffbB8bC5107cDd6ed79EC764EE0290a1" id="ethereum"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -168,7 +168,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://www.getmonero.org/" id="monero"
+                href="44VrRsr9BmBAWYYn6ZT2ATVoTTquv8KzbKex8MgUqKuXdw3dvQe55frjUvUWacpR7aGtQooiUCD7jAU1HRED1Va654zwPNc" id="monero"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -181,8 +181,22 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
+            <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center" id="tether"
+                href="0x278c0236c154B707435C68D0A5Ab3aD7FC79f0a1"
+                data-id="262545" data-type="page_item">
+                    <img
+                        class="link-each-image"
+                        data-src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                    />
+            <span class=" item-title text-center"  >Tether</span>
+            </a>                        
+            </div>
+            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="tether-tool-tip"></span>
+            
+            <div class="page-item-wrap relative">
+            <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center" id="shiba_inu"
-                href="https://www.shibatoken.com/"
+                href="0x278c0236c154B707435C68D0A5Ab3aD7FC79f0a1"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -192,10 +206,11 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             </a>                        
             </div>
             <span style="padding:8px; display:none;" class="alert-info page-item-each" id="shiba_inu-tool-tip"></span>
+
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://dogecoin.com/" id="dogecoin"
+                href="DKvF9afpLbo6QH1wAgsex34khFYQVc9gza" id="dogecoin"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -209,7 +224,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://loopring.org/" id="loopring"
+                href="0x278c0236c154B707435C68D0A5Ab3aD7FC79f0a1" id="loopring"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -223,7 +238,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://cardano.org/" id="cardano"
+                href="addr1qytzmcx49fj8catd8rjx5hwgvhtzetefxgw87t6xzmpwnh6zyu0rfpff2ytjgvl6lawttlcxm3cf7vr27u30387w46vq4lud40" id="cardano"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -237,7 +252,21 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://stellar.org/" id="stellar"
+                href="rPZYv3iNefx86G5QUNw4ayJf7P7iBQkJr" id="ripple"
+                data-id="262545" data-type="page_item">
+                    <img
+                        class="link-each-image"
+                        data-src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png"
+                    />
+            <span class=" item-title text-center">Ripple</span>
+            </a>                        
+            </div>
+            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="ripple-tool-tip"></span>
+            
+            <div class="page-item-wrap relative">
+            <div class="page-item flex-both-center absolute"></div>
+            <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                href="GA7HQQBFKMJTO626UKJYNUTTHQ5DJ5WZQVSDUM2MTDJJGD4VHVRFJY73" id="stellar"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -251,7 +280,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://www.algorand.com/" id="algorand"
+                href="EZIE554C4HUP42J6IBY6O2OZVH3JKW2A3LDU5GQNO5AQQGCTQUVBAGO3AI" id="algorand"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -265,7 +294,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://cronos.org/" id="cronos"
+                href="cro1gsx9suzs38kvhqhqfnprdex5jx0n4c5234rdrm" id="cronos"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -278,7 +307,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://apecoin.com" id="apeCoin"
+                href="0x278c0236c154B707435C68D0A5Ab3aD7FC79f0a1" id="apeCoin"
                 data-id="262545" data-type="page_item">
                     <img
                         class="link-each-image"
@@ -311,7 +340,8 @@ $('#bitcoin').click(function (e) {
    $("#bitcoin-tool-tip").html("Copied!");
    $("#bitcoin-tool-tip").show();
    setTimeout(function(){ $("#bitcoin-tool-tip").hide() }, 2000);
- });$('#ethereum').click(function (e) {
+ });
+ $('#ethereum').click(function (e) {
    e.preventDefault();
    var copyText = $(this).attr('href');
 
@@ -336,6 +366,19 @@ $('#bitcoin').click(function (e) {
    $("#monero-tool-tip").html("Copied!");
    $("#monero-tool-tip").show();
    setTimeout(function(){ $("#monero-tool-tip").hide() }, 2000);
+ });
+ $('#tether').click(function (e) {
+   e.preventDefault();
+   var copyText = $(this).attr('href');
+
+   document.addEventListener('copy', function(e) {
+      e.clipboardData.setData('text/plain', copyText);
+      e.preventDefault();
+   }, true);
+   document.execCommand('copy');
+   $("#tether-tool-tip").html("Copied!");
+   $("#tether-tool-tip").show();
+   setTimeout(function(){ $("#tether-tool-tip").hide() }, 2000);
  });
  $('#shiba_inu').click(function (e) {
    e.preventDefault();
@@ -388,6 +431,19 @@ $('#bitcoin').click(function (e) {
    $("#cardano-tool-tip").html("Copied!");
    $("#cardano-tool-tip").show();
    setTimeout(function(){ $("#cardano-tool-tip").hide() }, 2000);
+ });
+ $('#ripple').click(function (e) {
+   e.preventDefault();
+   var copyText = $(this).attr('href');
+
+   document.addEventListener('copy', function(e) {
+      e.clipboardData.setData('text/plain', copyText);
+      e.preventDefault();
+   }, true);
+   document.execCommand('copy');
+   $("#ripple-tool-tip").html("Copied!");
+   $("#ripple-tool-tip").show();
+   setTimeout(function(){ $("#ripple-tool-tip").hide() }, 2000);
  });
  $('#stellar').click(function (e) {
    e.preventDefault();
