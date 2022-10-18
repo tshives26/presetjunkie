@@ -312,7 +312,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
     width:43px;
     height:43px;
     position:absolute;
-    left:9px;
+    left:20px;
     -o-object-fit:cover;
     object-fit:cover
 }
@@ -799,10 +799,6 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
                     .page-item-wrap:hover {
                 transform: translate3d(0px, 0px, 0px) scale(1.015);
             }
-        
-         .page-item-wrap{
-            
-         }
 
         .page-item {
             border: 0px solid #FFFFFF;
