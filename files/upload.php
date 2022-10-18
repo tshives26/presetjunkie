@@ -9,38 +9,46 @@
  * @package ProjectSend
  * @subpackage Upload
  */
-require_once 'bootstrap.php';
+require_once "bootstrap.php";
 
-$active_nav = 'files';
+$active_nav = "files";
 
-$page_title = __('Upload files', 'cftp_admin');
+$page_title = __("Upload files", "cftp_admin");
 
-$page_id = 'upload_form';
+$page_id = "upload_form";
 
-$allowed_levels = array(9,8,7);
-if (get_option('clients_can_upload') == 1) {
-    $allowed_levels[] = 0;
+$allowed_levels = [9, 8, 7];
+if (get_option("clients_can_upload") == 1) {
+  $allowed_levels[] = 0;
 }
 
-include_once ADMIN_VIEWS_DIR . DS . 'header.php';
+include_once ADMIN_VIEWS_DIR . DS . "header.php";
 ?>
 <div class="row">
     <div class="col-xs-12">
         <?php
-            /** Count the clients to show a warning message or the form */
-            $statement		= $dbh->query("SELECT id FROM " . TABLE_USERS . " WHERE level = '0'");
-            $count_clients	= $statement->rowCount();
-            $statement		= $dbh->query("SELECT id FROM " . TABLE_GROUPS);
-            $count_groups	= $statement->rowCount();
+        /** Count the clients to show a warning message or the form */
+        $statement = $dbh->query(
+          "SELECT id FROM " . TABLE_USERS . " WHERE level = '0'"
+        );
+        $count_clients = $statement->rowCount();
+        $statement = $dbh->query("SELECT id FROM " . TABLE_GROUPS);
+        $count_groups = $statement->rowCount();
 
-            if ( ( !$count_clients or $count_clients < 1 ) && ( !$count_groups or $count_groups < 1 ) ) {
-                message_no_clients();
-            }
+        if (
+          (!$count_clients or $count_clients < 1) &&
+          (!$count_groups or $count_groups < 1)
+        ) {
+          message_no_clients();
+        }
         ?>
             <p>
                 <?php
-                    $msg = __('Click on Add files to select all the files that you want to upload, and then click continue. On the next step, you will be able to set a name and description for each uploaded file. Remember that the maximum allowed file size (in mb.) is ','cftp_admin') . ' <strong>'.UPLOAD_MAX_FILESIZE.'</strong>';
-                    echo system_message('info', $msg);
+                $msg = __(
+                  'Click "Add Files" to select all the presets that you want to share, then click "Upload Files". On the next page you will be able to set the name, plugin, and description for each preset.',
+                  "cftp_admin"
+                );
+                echo system_message("info", $msg);
                 ?>
             </p>
 
@@ -55,15 +63,13 @@ include_once ADMIN_VIEWS_DIR . DS . 'header.php';
                         multipart : true,
                         filters : {
                             max_file_size : '<?php echo UPLOAD_MAX_FILESIZE; ?>mb'
-                            <?php
-                                if ( false === CAN_UPLOAD_ANY_FILE_TYPE ) {
-                            ?>
+                            <?php if (false === CAN_UPLOAD_ANY_FILE_TYPE) { ?>
                                     ,mime_types: [
-                                        {title : "Allowed files", extensions : "<?php echo get_option('allowed_file_types'); ?>"}
+                                        {title : "Allowed files", extensions : "<?php echo get_option(
+                                          "allowed_file_types"
+                                        ); ?>"}
                                     ]
-                            <?php
-                                }
-                            ?>
+                            <?php } ?>
                         },
                         flash_swf_url : 'vendor/moxiecode/plupload/js/Moxie.swf',
                         silverlight_xap_url : 'vendor/moxiecode/plupload/js/Moxie.xap',
@@ -78,8 +84,7 @@ include_once ADMIN_VIEWS_DIR . DS . 'header.php';
                 });
             </script>
 
-            <?php include_once FORMS_DIR . DS . 'upload.php'; ?>
+            <?php include_once FORMS_DIR . DS . "upload.php"; ?>
     </div>
 </div>
-<?php
-    include_once ADMIN_VIEWS_DIR . DS . 'footer.php';
+<?php include_once ADMIN_VIEWS_DIR . DS . "footer.php";

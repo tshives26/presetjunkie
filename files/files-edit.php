@@ -61,6 +61,7 @@ $get_categories = get_categories();
                 $object = new \ProjectSend\Classes\Files;
                 $object->get($file['id']);
                 if ($object->recordExists()) {
+                    $file['assignments']['groups'] = array(1);
                     if ($object->save($file) != false) {
                         $saved_files[] = $file['id'];
                     }
@@ -89,7 +90,7 @@ $get_categories = get_categories();
                     }
                 }
             } else {
-                $flash->warning(__('E-mail notifications were not sent according to your settings. Make sure you have a cron job enabled if you need to send them.', 'cftp_admin'));
+                //$flash->warning(__('E-mail notifications were not sent according to your settings. Make sure you have a cron job enabled if you need to send them.', 'cftp_admin'));
             }
 
             // Redirect

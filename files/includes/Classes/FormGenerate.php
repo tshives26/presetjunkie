@@ -270,7 +270,7 @@ class FormGenerate {
 								$this->layout .= "\t\t" . '<div class="' . $this->wrap_group . '">' . "\n";
 								$this->layout .= "\t\t" . $this->field;
 								$this->layout .= "\t\t\t" . '<div class="' . $this->password_toggle_wrap . '">' . "\n";
-								$this->layout .= "\t\t\t\t" . '<button type="button" class="btn ' . $this->password_toggle_btn . '"><i class="glyphicon glyphicon-eye-open"></i></button>' . "\n";
+								$this->layout .= "\t\t\t\t" . '<button type="button" class="btn ' . $this->password_toggle_btn . '"><i class="glyphicon glyphicon-eye-open text-muted"></i></button>' . "\n";
 								$this->layout .= "\t\t\t" . '</div>' . "\n";
 								if ( function_exists( 'password_notes' ) ) {
 									$this->layout .= password_notes();

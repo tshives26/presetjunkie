@@ -19,15 +19,33 @@
     src: url("../fonts/footable.svg#footable") format("svg");
     font-weight: normal;
     font-style: normal; } }
-
+.datepicker table tr td, .datepicker table tr th{
+  color: rgb(30, 33, 34);
+}
+.btn-default{
+  background: none;
+  color: rgb(200, 195, 188);
+}
+.btn-default:hover {
+    color: rgb(200, 195, 188);
+    background-color: rgb(38, 41, 43);
+    border-color: rgb(71, 77, 80);
+}
+.form-control
+  {
+    color: rgb(200, 195, 188);
+    background-color: rgb(38, 42, 43) !important;
+  }
 .footable {
   border-collapse: separate;
   border-spacing: 0;
   border: 1px solid #ccc;
   font-size: 1em;
-  color: #444444;
-  background: #ffffff;
-  margin: 10px auto 15px; }
+  margin: 10px auto 15px;
+  border-color: rgb(62, 68, 70);
+  color: rgb(189, 183, 175);
+  background-image: initial;
+  background-color: rgb(24, 26, 27);}
 
 .footable > tfoot > tr > td {
   padding: 20px 0 !important; }
@@ -36,19 +54,20 @@
   border-left: 1px solid #fff;
   padding: 1px 4px;
   text-align: left;
-  color: #333; }
+  color: rgb(200, 195, 188); }
 
 .footable > thead > tr > th,
 .footable > thead > tr > td,
 .footable > thead > th.active {
   font-size: .8em;
   background-color: #E2E5E9 !important;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-color: rgb(38, 42, 43) !important; }
 
 .footable > thead > tr > th a,
 .footable > thead > tr > td a {
   display: inline-block;
-  color: #222;
+  color: rgb(189, 183, 175);
   text-decoration: none; }
 
 .footable > thead > tr > th.footable-sorted-asc > span.footable-sort-indicator:before {
@@ -84,7 +103,10 @@
   vertical-align: middle; }
 
 .footable > tbody > tr:hover > td {
-  background: #fbf8e9 !important; }
+  background-image: initial !important;
+  background-color: rgb(42, 37, 8) !important;
+  /* background: #fbf8e9 !important; */
+ }
 
 .footable > tbody > tr > td {
   padding: 7px 4px;
@@ -92,7 +114,10 @@
   vertical-align: middle; }
 
 .footable > tbody > tr.odd > td {
-  background: #F6F6F6; }
+  background-image: initial !important;
+  background-color:rgb(30, 33, 34);
+  /* background: #F6F6F6;  */
+}
 
 .footable .pagination {
   margin: 20px 0; }
@@ -181,8 +206,8 @@ select.form-control + .chosen-container.chosen-container-single .chosen-single d
   color: #000; }
 
 select.form-control + .chosen-container .chosen-drop {
-  background-color: #FFF;
-  border: 1px solid #CCC;
+  background-color: rgb(30, 33, 34);
+  border: 1px solid rgb(255 255 255 / 70%);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -212,7 +237,7 @@ select.form-control + .chosen-container .chosen-results {
   padding: 5px 0;
   font-size: 14px;
   list-style: none;
-  background-color: #fff;
+  background-color: rgb(30, 33, 34);
   margin-bottom: 5px; }
 
 select.form-control + .chosen-container .chosen-results li,
@@ -222,7 +247,7 @@ select.form-control + .chosen-container .chosen-results li.active-result {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333;
+  color: rgb(200, 195, 188);
   white-space: nowrap;
   background-image: none; }
 
@@ -242,7 +267,7 @@ select.form-control + .chosen-container-multi .chosen-choices {
   font-size: 14px;
   line-height: 1.428571429;
   color: #555;
-  background-color: #fff;
+  background-color: rgb(30, 33, 34);
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -292,7 +317,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
   display: list-item;
   color: #ccc;
   cursor: default;
-  background-color: white; }
+  background-color: rgb(30, 33, 34); }
 
 li.group-result {
   font-weight: bold !important;
@@ -430,8 +455,8 @@ a img {
 
 html,
 body {
-  background: #f4f4f4;
-  color: #666;
+  background: rgb(30, 33, 34);
+  color: #e9e9e9;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .9em;
   line-height: 1.2em;
@@ -459,8 +484,8 @@ body.login {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #e0e0e2;
-  border-right: 1px solid #ccc; }
+  background: rgb(30, 33, 34);
+  border-right: 1px solid #e9e9e9; }
   .main_side_menu ul {
     list-style: none; }
 
@@ -493,7 +518,7 @@ body.login {
   margin: 15px 0; }
 
 .backend h2 {
-  color: #333333;
+  color: rgb(200, 195, 188);
   font-size: 27px;
   line-height: 29px;
   margin: 0 0 35px;
@@ -628,21 +653,23 @@ body.login {
   border-radius: 2px;
   /*@include box-shadow(3px 3px 5px, #dedede);*/ }
   .backend .widget .widget_int {
-    padding: 15px; }
+    padding: 15px;
+    background: rgb(30, 33, 34);
+    color: #e9e9e9; }
   .backend .widget h4 {
     text-align: left;
     padding: 13px;
     font-size: 16px;
     margin: 0 !important;
-    color: #42454a;
-    background: #fff;
+    color: white;
+    background: rgb(30, 33, 34);
     border-bottom: 1px solid #dedede;
     -webkit-border-radius: 2px 2px 0 0;
     -moz-border-radius: 2px 2px 0 0;
     -ms-border-radius: 2px 2px 0 0;
     border-radius: 2px 2px 0 0; }
   .backend .widget:hover h4 {
-    background: #f0f0f0; }
+    background: rgb(42, 37, 8); }
 
 .backend .widget_counters ul {
   list-style: none;
@@ -696,9 +723,9 @@ body.login {
     border-bottom: 1px solid #dedede;
     display: flex; }
     .backend #widget_actions_log #log_container ul li:nth-child(odd) {
-      background: #f6f6f6; }
+      background: rgb(30, 33, 34); }
     .backend #widget_actions_log #log_container ul li:hover {
-      background: #fbf8e9; }
+      background: #4e4e4e; }
     .backend #widget_actions_log #log_container ul li i {
       margin: 0 1em;
       color: #1ec4a7;
@@ -835,7 +862,7 @@ body.login {
   border-radius: 2px; }
 
 .backend .white-box {
-  background-color: white;
+  background-color: rgb(30, 33, 34);
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -856,7 +883,7 @@ body.login {
 
 .backend .categories_form {
   padding: 20px;
-  background: white;
+  background: rgb(38, 42, 43) !important;
   margin-bottom: 40px;
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
@@ -939,7 +966,7 @@ body.login {
   margin-bottom: 40px; }
 
 .backend .edit_files .edit_files_blocks {
-  background: white;
+  background: rgb(30, 33, 34);
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1244,7 +1271,7 @@ body.login {
   margin: 0;
   padding: 0; }
   .main_menu a {
-    color: #3f3f47;
+    color: #e9e9e9;
     font-size: 1.1em; }
   .main_menu > li {
     margin: 0;
@@ -1265,11 +1292,11 @@ body.login {
       .main_menu > li > a i {
         margin-right: 1em; }
     .main_menu > li > ul {
-      border-top: 1px solid #cbcbcd;
+      border-top: 1px solid rgb(42 37 8);
       padding: 1em 0 1em 28px;
       font-size: .9em;
       display: none;
-      background: #d6d6d9; }
+      background: rgb(42, 37, 8); }
       .main_menu > li > ul > li {
         position: relative; }
         .main_menu > li > ul > li ::before {
@@ -1298,18 +1325,18 @@ body.login {
         .main_menu > li > ul > li a {
           display: block;
           padding: .5em 0 .5em 1.5em;
-          color: #3f3f47; }
+          color: white; }
         .main_menu > li > ul > li.current_page {
           background: #cbcbcd; }
         .main_menu > li > ul > li:hover {
-          background: #cbcbcd; }
+          background: #3b3b3b; }
           .main_menu > li > ul > li:hover ::before {
             transform: scale(1.5); }
     .main_menu > li.current_page, .main_menu > li.current_nav {
-      background: #d6d6d9;
+      background: #3f3f47;
       border-right: 7px solid #004b92; }
       .main_menu > li.current_page > a, .main_menu > li.current_nav > a {
-        color: #3f3f47; }
+        color: white; }
 
 .menu_contracted .main_menu > li {
   text-align: center;
@@ -1325,7 +1352,7 @@ body.login {
       margin: 0;
       text-align: center;
       font-size: 2.2em;
-      color: #222; }
+      color: rgb(200, 195, 188); }
     .menu_contracted .main_menu > li > a .menu_label {
       display: none; }
   .menu_contracted .main_menu > li > ul {

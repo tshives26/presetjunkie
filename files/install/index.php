@@ -247,7 +247,7 @@ $form = true;
                                         <div class="input-group">
                                             <input type="password" name="admin_pass" id="admin_pass" class="form-control password_toggle required" maxlength="<?php echo MAX_PASS_CHARS; ?>" />
                                             <div class="input-group-btn password_toggler">
-                                                <button type="button" class="btn pass_toggler_show"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                                <button type="button" class="btn pass_toggler_show"><i class="text-muted glyphicon glyphicon-eye-open"></i></button>
                                             </div>
                                         </div>
                                         <button type="button" name="generate_password" id="generate_password" class="btn btn-default btn-sm btn_generate_password" data-ref="admin_pass" data-min="<?php echo MAX_GENERATE_PASS_CHARS; ?>" data-max="<?php echo MAX_GENERATE_PASS_CHARS; ?>"><?php _e('Generate','cftp_admin'); ?></button>

@@ -8,7 +8,7 @@
             <div class="input-group">
                 <input type="password" name="password" id="password" class="form-control password_toggle required" required />
                 <div class="input-group-btn password_toggler">
-                    <button type="button" class="btn pass_toggler_show"><i class="glyphicon glyphicon-eye-open"></i></button>
+                    <button type="button" class="btn pass_toggler_show"><i class="text-muted glyphicon glyphicon-eye-open"></i></button>
                 </div>
             </div>
             <button type="button" name="generate_password" id="generate_password" class="btn btn-default btn-sm btn_generate_password" data-ref="reset_password_new" data-min="<?php echo MAX_GENERATE_PASS_CHARS; ?>" data-max="<?php echo MAX_GENERATE_PASS_CHARS; ?>"><?php _e('Generate','cftp_admin'); ?></button>

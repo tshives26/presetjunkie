@@ -1,4 +1,4 @@
-<form action="files-edit.php?ids=<?php echo html_output($_GET['ids']); ?>" name="files" id="files" method="post" enctype="multipart/form-data">
+<form action="files-edit.php?ids=<?php echo html_output($_GET['ids']); ?>" name="files" id="files" method="post" enctype="multipart/form-data" onsubmit="return checkFormData()">
     <?php addCsrf(); ?>
 
     <div class="container-fluid">
@@ -29,7 +29,7 @@
                                             <div class="file_data">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <h3><?php _e('File information', 'cftp_admin');?></h3>
+                                                        <h3><?php _e('Preset information', 'cftp_admin');?></h3>
                                                         <input type="hidden" name="file[<?php echo $i; ?>][id]" value="<?php echo $file->id; ?>" />
                                                         <input type="hidden" name="file[<?php echo $i; ?>][original]" value="<?php echo $file->filename_original; ?>" />
                                                         <input type="hidden" name="file[<?php echo $i; ?>][file]" value="<?php echo $file->filename_on_disk; ?>" />
@@ -39,9 +39,45 @@
                                                             <input type="text" name="file[<?php echo $i; ?>][name]" value="<?php echo $file->title; ?>" class="form-control file_title" placeholder="<?php _e('Enter here the required file title.', 'cftp_admin');?>" />
                                                         </div>
 
+                                                        <script type="text/javascript">
+                                                            function checkFormData(){
+                                                                let plugin = $('#categories_<?php echo $file->id ?>').val();
+                                                                let errorurlcatflag= false;
+                                                                if(plugin == "default")
+                                                                {
+                                                                    $('#categoryErr').empty().append(" <div class='errors-cs'><p class='text-danger'>This Field is required</p></div>");
+                                                                    $('#categoryErr').show();
+                                                                    console.log('Not working');
+                                                                    errorcatflag= false;
+                                                                }else{
+                                                                    console.log('click' , plugin);
+                                                                    errorcatflag= true;
+                                                                }
+                                                                if(errorcatflag){
+                                                                    return true;
+                                                                }else{
+                                                                    return false;
+                                                                }
+                                                            }
+                                                        </script>
+                                                        <!-- Plugin type on user page. -->
+                                                        <div class="form-group">
+                                                        <div class="file_data">
+                                                        <label><?php _e('Plugin', 'cftp_admin');?></label>
+
+                                                        <select id="categories_<?php echo $file->id; ?>" name="file[<?php echo $i; ?>][categories][]" class="form-control chosen-select none" data-type="categories" data-placeholder="<?php _e('Choose the Neural DSP plugin.', 'cftp_admin');?>">
+                                                            <?php
+                                                                echo "<option selected value='default'>Select Neural DSP Plugin..</option>";
+                                                                echo generate_categories_options( $get_categories['arranged'], 0, $file->categories );
+                                                            ?>
+                                                        </select>
+                                                        </div>
+                                                        <div id="categoryErr"></div>
+                                                        </div>
+
                                                         <div class="form-group">
                                                             <label><?php _e('Description', 'cftp_admin');?></label>
-                                                            <textarea id="description_<?php echo $file->id; ?>" name="file[<?php echo $i; ?>][description]" class="<?php if ( get_option('files_descriptions_use_ckeditor') == 1 ) { echo 'ckeditor'; } ?> form-control" placeholder="<?php _e('Optionally, enter here a description for the file.', 'cftp_admin');?>"><?php if (!empty($file->description)) { echo $file->description; } ?></textarea>
+                                                            <textarea id="description_<?php echo $file->id; ?>" name="file[<?php echo $i; ?>][description]" class="<?php if ( get_option('files_descriptions_use_ckeditor') == 1 ) { echo 'ckeditor'; } ?> form-control" placeholder="<?php _e('Leave a detailed description so users can understand the preset style and characteristics.', 'cftp_admin');?>"><?php if (!empty($file->description)) { echo $file->description; } ?></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -209,3 +245,4 @@
         <button type="submit" name="save" class="btn btn-wide btn-primary" id="upload-continue"><?php _e('Save','cftp_admin'); ?></button>
     </div>
 </form>
+

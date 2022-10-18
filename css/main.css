@@ -76,6 +76,10 @@ body {
   color: #6e6e6e;
 }
 
+.footable.breakpoint > tbody > tr.footable-row-detail
+{
+  background-color: rgb(30, 33, 34);
+}
 /**
  * links - (_document-setup.scss)
  * -------------------------------------------------------------------

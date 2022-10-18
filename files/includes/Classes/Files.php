@@ -42,6 +42,8 @@ class Files
     public $mime_type;
     public $embeddable;
     public $embeddable_type;
+    public $cat_id;
+    public $categories_name;
 
     private $is_filetype_allowed;
 
@@ -62,6 +64,7 @@ class Files
         $this->assignments_clients = [];
         $this->assignments_groups = [];
         $this->categories = [];
+        $this->categories_name = [];
 
         $this->embeddable = false;
     }
@@ -212,8 +215,27 @@ class Files
         $statement->execute();
         if ($statement->rowCount() > 0) {
             while ( $row = $statement->fetch() ) {
-                $this->categories[] = $row['cat_id'];
+                array_push($this->categories, $row['cat_id']);
             }
+        }
+
+        $this->getCurrentCategoryData($this->categories);
+
+    }
+
+    public function getCurrentCategoryData($cat_id)
+    {
+        if(is_array($cat_id) && count($cat_id) > 0) {
+            $cat_id = implode(",", $cat_id);
+            $statement = $this->dbh->prepare("SELECT * FROM " . TABLE_CATEGORIES . " WHERE id IN ($cat_id)");
+            $statement->bindParam(':id', $this->cat_id, PDO::PARAM_INT);
+            $statement->execute();
+            if ($statement->rowCount() > 0) {
+                while ( $row = $statement->fetch() ) {
+                    $this->categories_name[] = $row['name'];
+                }
+            }
+            return $this->categories_name;
         }
     }
 
@@ -898,10 +920,10 @@ class Files
     // Assign
     public function saveAssignments($new_values, $hidden = 0)
     {
-        $allowed = array(9,8,7);
-        if (!current_role_in($allowed)) {
-            return false;
-        }
+        // $allowed = array(9,8,7);
+        // if (!current_role_in($allowed)) {
+        //     return false;
+        // }
 
         if (empty($this->id)) {
             return false;
@@ -1007,10 +1029,10 @@ class Files
 
     public function addAssignment($type = null, $to_id = 0, $hidden = 0)
     {
-        $allowed = array(9,8,7);
-        if (!current_role_in($allowed)) {
-            return false;
-        }
+        // $allowed = array(9,8,7);
+        // if (!current_role_in($allowed)) {
+        //     return false;
+        // }
         
         if (empty($this->id)) {
             return false;
@@ -1060,10 +1082,10 @@ class Files
 
     public function removeAssignment($from_type, $from_id)
 	{
-        $allowed = array(9,8,7);
-        if (!current_role_in($allowed)) {
-            return false;
-        }
+        // $allowed = array(9,8,7);
+        // if (!current_role_in($allowed)) {
+        //     return false;
+        // }
         
         if (empty($this->id)) {
             return false;
@@ -1114,10 +1136,10 @@ class Files
 
     public function saveCategories($categories = null)
     {
-        $allowed = array(9,8,7);
-        if (!current_role_in($allowed)) {
-            return false;
-        }
+        // $allowed = array(9,8,7);
+        // if (!current_role_in($allowed)) {
+        //     return false;
+        // }
         
         if (empty($this->id)) {
             return false;

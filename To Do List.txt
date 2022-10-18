@@ -2,40 +2,13 @@ git add .
 git commit -m "COMMENT HERE"
 git push
 
-
 To Do:
 
--Order of header items not accurate
---header.php 93
 
--Add category (plugin) to file table view
---template.php/manage-files.php 123,250,195
---mange files admin, edit presets client, view presets client, client file edit confirmation page
-
--Resize file table column width
---template.php, manage-files.php 123,250
---TableGenerate.php
---mange files admin, edit presets client, view presets client, client file edit confirmation page
-
--Blank "Select Plugin" option on edit files, make required. Got it populated but not forced/required.
---file_editor.php 42
---required tag (clients.php 78)
-
--Dark mode
-
--Description stretching table if too long (i guess it fixed itself?)
-
--Fix phone hide for table view
+-Dark mode adjustments
 
 -Remove requirement for name, use only username
 
--parse XML and make sure it adheres to schema
-
--donate link
---copy link to clipboard
-
--add register button above login info
+-parse XML and make sure it adheres to schema for security
 
 -change font to roboto
-
--fix user links

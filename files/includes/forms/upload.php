@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="after_form_buttons">
-        <button type="submit" name="Submit" class="btn btn-wide btn-primary" id="btn-submit"><?php _e('Upload files','cftp_admin'); ?></button>
+        <button type="submit" name="Submit" class="btn btn-wide btn-primary" id="btn-submit"><?php _e('Upload Files','cftp_admin'); ?></button>
     </div>
     <div class="message message_info message_uploading">
         <p><?php _e("Your files are being uploaded! Progress indicators may take a while to update, but work is still being done behind the scenes.",'cftp_admin'); ?></p>

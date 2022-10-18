@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'bfd6b6dcda33f970b8e442fbff723d4e77947c23',
+        'reference' => 'd7775662cd1c1d0062af8e6d35b23ae177966aa4',
         'name' => 'projectsend/projectsend',
         'dev' => true,
     ),
@@ -80,12 +80,12 @@
             'dev_requirement' => false,
         ),
         'projectsend/projectsend' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'bfd6b6dcda33f970b8e442fbff723d4e77947c23',
+            'reference' => 'd7775662cd1c1d0062af8e6d35b23ae177966aa4',
             'dev_requirement' => false,
         ),
         'tamtamchik/simple-flash' => array(
