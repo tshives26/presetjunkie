@@ -161,7 +161,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                href="https://github.com/tshives26/preset-junkie"
+                href="https://github.com/tshives26/presetjunkie"
                 data-id="261685" data-type="page_item">
                     <img
                         class="link-each-image"
