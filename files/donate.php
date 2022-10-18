@@ -64,7 +64,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
         }
 
         .page-item-each {
-            color: #90EE90;
+            color: #CCFCC4;
             font-family: 'Monaco', monospace;
             font-size: 20px;
             font-weight: 500;

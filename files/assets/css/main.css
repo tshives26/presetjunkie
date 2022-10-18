@@ -76,7 +76,7 @@
 .footable > thead > tr > th.footable-sorted,
 .footable > thead > tr > th.footable-sorted-asc,
 .footable > thead > tr > th.footable-sorted-desc {
-  background-color: #004b92 !important;
+  background-color: #696969 !important;
   color: white !important; }
 
 .footable-sorted a, .footable-sorted-asc a, .footable-sorted-desc a {
@@ -104,7 +104,7 @@
 
 .footable > tbody > tr:hover > td {
   background-image: initial !important;
-  background-color: rgb(42, 37, 8) !important;
+  background-color: rgb(0, 0, 0) !important;
   /* background: #fbf8e9 !important; */
  }
 
@@ -347,9 +347,9 @@ li.group-result {
   padding: 4px 20px !important; }
 
 .btn-primary {
-  background: #004b92; }
+  background: #CCFCC4; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #005db6; }
+    background: #CCFCC4; }
 
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
   background: #004b92;
@@ -381,8 +381,8 @@ span.label {
   height: auto; }
 
 .plupload_button {
-  color: white;
-  background: #004b92;
+  color: #000;
+  background: #CCFCC4;
   margin-right: 4px;
   padding: 4px 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -390,15 +390,15 @@ span.label {
   line-height: 20px;
   text-decoration: none;
   text-align: center;
-  border: 1px solid #004380;
+  border: 1px solid #000;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
   .plupload_button:hover {
-    color: white;
-    background: #005db6; }
+    color: #000;
+    background: #CCFCC4; }
   .plupload_button:focus, .plupload_button:active {
-    color: white; }
+    color: #000; }
 
 .plupload_wrapper {
   -moz-box-shadow: 3px 3px 5px #dedede;
@@ -1296,7 +1296,7 @@ body.login {
       padding: 1em 0 1em 28px;
       font-size: .9em;
       display: none;
-      background: rgb(42, 37, 8); }
+      background: rgb(39, 39, 39); }
       .main_menu > li > ul > li {
         position: relative; }
         .main_menu > li > ul > li ::before {
@@ -1327,14 +1327,14 @@ body.login {
           padding: .5em 0 .5em 1.5em;
           color: white; }
         .main_menu > li > ul > li.current_page {
-          background: #cbcbcd; }
+          background: #000; }
         .main_menu > li > ul > li:hover {
           background: #3b3b3b; }
           .main_menu > li > ul > li:hover ::before {
             transform: scale(1.5); }
     .main_menu > li.current_page, .main_menu > li.current_nav {
       background: #3f3f47;
-      border-right: 7px solid #004b92; }
+      border-right: 7px solid #CCFCC4; }
       .main_menu > li.current_page > a, .main_menu > li.current_nav > a {
         color: white; }
 
