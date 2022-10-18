@@ -4,10 +4,8 @@ git push
 
 To Do:
 
--Dark mode adjustments
-
 -Remove requirement for name, use only username
 
--parse XML and make sure it adheres to schema for security
+-parse XML and make sure it adheres to schema
 
 -change font to roboto
