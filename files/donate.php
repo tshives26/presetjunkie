@@ -64,9 +64,9 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
         }
 
         .page-item-each {
-            color: #1F365C;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
+            color: #90EE90;
+            font-family: 'Monaco', monospace;
+            font-size: 20px;
             font-weight: 500;
             text-transform: none;
             border-radius: 8px;
@@ -87,8 +87,8 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             }
 
         .page-item {
-            border: 0px solid #FFFFFF;
-            background: #FFFFFF ;
+            border: 4px solid #000000;
+            background: #696969 ;
             border-radius: 8px;
            box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
         }
@@ -148,7 +148,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Bitcoin</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="bitcoin-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="bitcoin-tool-tip"></span>
 
             
             <div class="page-item-wrap relative">
@@ -163,7 +163,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Ethereum</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="ethereum-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="ethereum-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -177,7 +177,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Monero</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="monero-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="monero-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -191,7 +191,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center"  >Tether</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="tether-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="tether-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -205,7 +205,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center"  >Shiba Inu</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="shiba_inu-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="shiba_inu-tool-tip"></span>
 
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -219,7 +219,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Dogecoin</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="dogecoin-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="dogecoin-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -233,7 +233,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Loopring</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="loopring-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="loopring-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -247,7 +247,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Cardano</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="cardano-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="cardano-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -261,7 +261,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Ripple</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="ripple-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="ripple-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -275,7 +275,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Stellar</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="stellar-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="stellar-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -289,7 +289,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Algorand</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="algorand-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="algorand-tool-tip"></span>
             
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
@@ -303,7 +303,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Cronos</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="cronos-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="cronos-tool-tip"></span>
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
             <a rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
@@ -316,7 +316,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">ApeCoin</span>
             </a>                        
             </div>
-            <span style="padding:8px; display:none;" class="alert-info page-item-each" id="apeCoin-tool-tip"></span>
+            <span style="padding:8px; display:none;" class="alert-info page-item-wrap" id="apeCoin-tool-tip"></span>
             
         </div>
     </div>
