@@ -366,6 +366,16 @@ if (current_role_in([9, 8, 7])) {
     ],
   ];
 
+  // $items["support"] = [
+  //   "nav" => "support",
+  //   "level" => [9, 8, 7, 0],
+  //   "main" => [
+  //     "label" => __("Support/Help", "cftp_admin"),
+  //     "link" => "https://discord.gg/DX73QswUUg",
+  //     "icon" => "question-circle",
+  //   ],
+  // ];
+
   $items["beer"] = [
     "nav" => "beer",
     "level" => [9, 8, 7, 0],
