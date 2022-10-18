@@ -44,16 +44,7 @@
                 $update_data = json_decode($update_data);
                 if ($update_data->update_available == '1') {
 ?>
-                    <div class="alert alert-warning update_msg">
-                        <div class="row">
-                            <div class="col-sm-8">
-                                <strong><?php _e('Update available!', 'cftp_admin'); ?></strong> <?php echo sprintf( __('ProjectSend %s has been released', 'cftp_admin'), $update_data->latest_version); ?>
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <a href="<?php echo $update_data->url; ?>" class="btn btn-default btn-xs" target="_blank"><?php _e('Download', 'cftp_admin');?></a> <a href="<?php echo $update_data->chlog; ?>" target="_blank" class="btn btn-default btn-xs"><?php _e('Changelog', 'cftp_admin');?></a>
-                            </div>
-                        </div>
-                    </div>
+
 <?php
                 }
 			}
