@@ -25,7 +25,7 @@ function format_action_log_record($params)
 		case 1:
 			$part1 = $owner_user;
             $action_text = __('logged in to the system.','cftp_admin');
-            $formatted = sprintf(__('%s logged in to the system','cftp_admin'), $affected_account_name);
+            $formatted = sprintf(__('%s logged in to the system','cftp_admin'), $owner_user, $affected_account_name);
             $type = 'auth';
 			break;
 		case 2:
@@ -45,35 +45,35 @@ function format_action_log_record($params)
 		case 4:
 			$part1 = $affected_account_name;
 			$action_text = __('created a client account for themselves.','cftp_admin');
-            $formatted = sprintf(__('%s registered as a new client','cftp_admin'), $affected_account_name);
+            $formatted = sprintf(__('%s registered as a new client','cftp_admin'), $owner_user, $affected_account_name);
             $type = 'clients';
 			break;
 		case 5:
 			$part1 = $owner_user;
 			$action_text = __('(user) uploaded the file','cftp_admin');
             $part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (user) uploaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s uploaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 6:
 			$part1 = $owner_user;
 			$action_text = __('(client) uploaded the file','cftp_admin');
 			$part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (client) uploaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s uploaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 7:
 			$part1 = $owner_user;
 			$action_text = __('(user) downloaded the file','cftp_admin');
             $part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (user) downloaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s downloaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 8:
 			$part1 = $owner_user;
 			$action_text = __('(client) downloaded the file','cftp_admin');
             $part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (client) downloaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s downloaded the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 9:
@@ -270,14 +270,14 @@ function format_action_log_record($params)
 			$part1 = $owner_user;
 			$action_text = __('(user) edited the file','cftp_admin');
 			$part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (user) edited the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s edited the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 33:
 			$part1 = $owner_user;
 			$action_text = __('(client) edited the file','cftp_admin');
             $part2 = $affected_file_name;
-            $formatted = sprintf(__('%s (client) edited the file %s','cftp_admin'), $owner_user, $affected_file_name);
+            $formatted = sprintf(__('%s edited the file %s','cftp_admin'), $owner_user, $affected_file_name);
             $type = 'files';
 			break;
 		case 34:
