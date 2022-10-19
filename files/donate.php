@@ -87,8 +87,8 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             }
 
         .page-item {
-            border: 4px solid #000000;
-            background: #696969 ;
+            border: 4px solid #696969;
+            background: #000000 ;
             border-radius: 8px;
            box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
         }
