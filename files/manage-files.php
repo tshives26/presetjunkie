@@ -775,7 +775,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
                     [
                       "sortable" => true,
                       "sort_url" => "download_count",
-                      "content" => __("Total downloads", "cftp_admin"),
+                      "content" => __("Downloads", "cftp_admin"),
                       "hide" => "phone",
                       "condition" => $conditions["total_downloads"],
                     ],

@@ -42,8 +42,8 @@
   border: 1px solid #ccc;
   font-size: 1em;
   margin: 10px auto 15px;
-  border-color: rgb(62, 68, 70);
-  color: rgb(189, 183, 175);
+  border-color: rgb(204, 252, 196); /* old - 62 68 70 / new hex- CCFCC4*/
+  color: rgb(205, 205, 205);
   background-image: initial;
   background-color: rgb(24, 26, 27);}
 
