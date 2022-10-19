@@ -13,22 +13,19 @@
 	<div class="widget_int">
 		<h3><?php _e('Software','cftp_admin'); ?></h3>
 		<dl class="dl-horizontal">
-			<dt><?php _e('Version','cftp_admin'); ?></dt>
+			<dt><?php _e('Release','cftp_admin'); ?></dt>
 			<dd>
-				<?php echo CURRENT_VERSION; ?> <?php
+				<?php echo "Preset Junkie Public"; ?> <?php
                     $update_data = get_latest_version_data();
                     $update_data = json_decode($update_data);
-                    if ($update_data->update_available == '1') {
-						echo ' - <strong>'; _e('New version available','cftp_admin'); echo ':</strong> <a href="'. $update_data->url . '">' . $update_data->latest_version . '</a>';
-					}
 				?>
 			</dd>
 
-			<dt><?php _e('Default upload max. size','cftp_admin'); ?></dt>
-			<dd><?php echo MAX_FILESIZE; ?> mb.</dd>
+			<dt><?php _e('ProjectSend version','cftp_admin'); ?></dt>
+			<dd><?php echo "r1420"; ?></dd>
 
-			<dt><?php _e('Template','cftp_admin'); ?></dt>
-			<dd><?php echo ucfirst(get_option('selected_clients_template')); ?> <a href="<?php echo BASE_URI; ?>templates.php">[<?php _e('Change','cftp_admin'); ?>]</a></dd>
+			<dt><?php _e('Default upload max size','cftp_admin'); ?></dt>
+			<dd><?php echo MAX_FILESIZE; ?> mb</dd>
 		</dl>
 
 		<h3><?php _e('System','cftp_admin'); ?></h3>
