@@ -669,7 +669,7 @@ body.login {
     -ms-border-radius: 2px 2px 0 0;
     border-radius: 2px 2px 0 0; }
   .backend .widget:hover h4 {
-    background: rgb(42, 37, 8); }
+    background: rgb(44, 44, 44); }
 
 .backend .widget_counters ul {
   list-style: none;
