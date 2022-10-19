@@ -1917,7 +1917,7 @@ function recaptcha2RenderWidget()
 ?>
         <div class="form-group">
             <!-- <label><?php _e('Verification','cftp_admin'); ?></label> -->
-            <div class="g-recaptcha" data-sitekey="<?php echo get_option('recaptcha_site_key'); ?>"></div>
+            <div class="g-recaptcha" data-theme="dark" data-sitekey="<?php echo get_option('recaptcha_site_key'); ?>"></div>
         </div>
 <?php
     }
