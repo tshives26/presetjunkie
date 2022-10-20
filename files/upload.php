@@ -48,7 +48,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
                   'Click "Add Files" to select all the presets that you want to share, then click "Upload Files". On the next page you will be able to set the name, plugin, and description for each preset.',
                   "cftp_admin"
                 );
-                echo system_message("info", $msg);
+                echo system_message("success", $msg);
                 ?>
             </p>
 
