@@ -198,11 +198,11 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                           "condition" => $conditions["is_not_client"],
                         ],
                         [
-                          "content" => __("Type", "cftp_admin"),
+                          "content" => __("Size", "cftp_admin"),
                           "hide" => "phone",
                         ],
                         [
-                          "content" => __("Size", "cftp_admin"),
+                          "content" => __("Type", "cftp_admin"),
                           "hide" => "phone",
                         ],
                         [
@@ -380,16 +380,16 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                             ],
                           ],
                           [
+                            "content" => $file->size_formatted,
+                            "attributes" => [
+                              "style" => ["width: 6%;"]
+                            ],
+                          ],
+                          [
                             "content" => $extension_cell,
                             "attributes" => [
                               "class" => ["extra"],
                               "style" => ["width: 4%;"]
-                            ],
-                          ],
-                          [
-                            "content" => $file->size_formatted,
-                            "attributes" => [
-                              "style" => ["width: 6%;"]
                             ],
                           ],
                           [
