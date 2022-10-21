@@ -196,6 +196,19 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             <span class=" item-title text-center">Neural DSP Reddit</span>
             </a>
             </div>
+            
+            <div class="page-item-wrap relative">
+            <div class="page-item flex-both-center absolute"></div>
+            <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                href="https://discord.com/invite/cVvMdQ6xaH"
+                data-id="261717" data-type="page_item">
+                    <img
+                        class="link-each-image"
+                        data-src="http://presetjunkie.com/images/discordndsp.png"
+                    />
+            <span class=" item-title text-center">Neural DSP Discord</span>
+            </a>
+            </div>
 
             <div class="page-item-wrap relative">
             <div class="page-item flex-both-center absolute"></div>
