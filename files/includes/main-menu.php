@@ -184,6 +184,21 @@ if (current_role_in([9, 8, 7])) {
 
   $items[] = "separator";
 
+  // $items["templates"] = [
+  //   "nav" => "templates",
+  //   "level" => [9],
+  //   "main" => [
+  //     "label" => __("Templates", "cftp_admin"),
+  //     "icon" => "desktop",
+  //   ],
+  //   "sub" => [
+  //     [
+  //       "label" => __("Templates", "cftp_admin"),
+  //       "link" => "templates.php",
+  //     ],
+  //   ],
+  // ];
+
   $items["options"] = [
     "nav" => "options",
     "level" => [9],
