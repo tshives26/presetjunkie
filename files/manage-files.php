@@ -1003,7 +1003,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
               "content" => $file->description,
               "attributes" => [
                 "class" => ["description"],
-                "style" => ["width: 40%;"]
+                "style" => ["width: 38%;"]
               ],
             ],
             [
@@ -1021,7 +1021,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
             ],
             [
               "attributes" => [
-                "style" => ["width: 5%; text-align: center;"]
+                "style" => ["width: 6%; text-align: center;"]
               ],
               "content" =>
               '<span class="label label-' .
@@ -1041,7 +1041,7 @@ include_once ADMIN_VIEWS_DIR . DS . "header.php";
               "condition" => $conditions["total_downloads"],
               "attributes" => [
                 "class" => ["text-center"],
-                "style" => ["width: 7%; text-align: center;"]
+                "style" => ["width: 8%; text-align: center;"]
               ],
             ],
             [
