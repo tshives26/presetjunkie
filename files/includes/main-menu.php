@@ -361,7 +361,7 @@ if (current_role_in([9, 8, 7])) {
     "level" => [9, 8, 7, 0],
     "main" => [
       "label" => __("IR Zip (10/2022)", "cftp_admin"),
-      "link" => "/assets/Free_IR_Collection.zip",
+      "link" => "/assets/Free_IR_Collection_1022.zip",
       "icon" => "microphone",
     ],
   ];
