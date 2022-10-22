@@ -138,7 +138,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "groups",
     "level" => [9, 8],
     "main" => [
-      "label" => __("Clients groups", "cftp_admin"),
+      "label" => __("Clients Groups", "cftp_admin"),
       "icon" => "th-large",
       "badge" => COUNT_MEMBERSHIP_REQUESTS,
     ],
@@ -246,7 +246,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "emails",
     "level" => [9],
     "main" => [
-      "label" => __("E-mail templates", "cftp_admin"),
+      "label" => __("E-mail Templates", "cftp_admin"),
       "icon" => "envelope",
     ],
     "sub" => [
@@ -340,7 +340,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "manage",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("Edit my presets", "cftp_admin"),
+      "label" => __("Edit My Presets", "cftp_admin"),
       "link" => "manage-files.php",
       "icon" => "file",
     ],
@@ -350,9 +350,19 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "template",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("View all presets", "cftp_admin"),
+      "label" => __("View All Presets", "cftp_admin"),
       "link" => CLIENT_VIEW_FILE_LIST_URL_PATH,
       "icon" => "th-list",
+    ],
+  ];
+
+  $items["ir"] = [
+    "nav" => "ir",
+    "level" => [9, 8, 7, 0],
+    "main" => [
+      "label" => __("IR Zip File", "cftp_admin"),
+      "link" => "/assets/Free_IR_Collection.zip",
+      "icon" => "microphone",
     ],
   ];
 
@@ -360,7 +370,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "link_tree",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("External links", "cftp_admin"),
+      "label" => __("External Links", "cftp_admin"),
       "link" => "link_tree.php",
       "icon" => "external-link-square",
     ],
@@ -380,7 +390,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "beer",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("Buy me a beer", "cftp_admin"),
+      "label" => __("Buy Me A Beer", "cftp_admin"),
       "link" => "donate.php",
       "icon" => "beer",
     ],
