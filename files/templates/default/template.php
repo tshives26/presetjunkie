@@ -209,13 +209,13 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                 "content" => __("Size", "cftp_admin"),
                 "hide" => "phone",
               ],
-              [
-                "sortable" => true,
-                "sort_url" => "download_count",
-                "content" => __("Downloads", "cftp_admin"),
-                "hide" => "phone",
-                "condition" => $conditions["total_downloads"],
-              ],
+              // [
+              //   "sortable" => true,
+              //   "sort_url" => "download_count",
+              //   "content" => __("Downloads", "cftp_admin"),
+              //   "hide" => "phone",
+              //   "condition" => $conditions["total_downloads"],
+              // ],
               [
                 "content" => __("Download", "cftp_admin"),
                 "hide" => "phone",
@@ -462,16 +462,16 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                     "style" => ["width: 4%;"]
                   ],
                 ],
-                [
-                  "content" => !empty($downloads_table_link)
-                    ? $downloads_table_link
-                    : false,
-                  "condition" => $conditions["total_downloads"],
-                  "attributes" => [
-                    "class" => ["text-center"],
-                    "style" => ["width: 7%; text-align: center;"]
-                  ],
-                ],
+                // [
+                //   "content" => !empty($downloads_table_link)
+                //     ? $downloads_table_link
+                //     : false,
+                //   "condition" => $conditions["total_downloads"],
+                //   "attributes" => [
+                //     "class" => ["text-center"],
+                //     "style" => ["width: 7%; text-align: center;"]
+                //   ],
+                // ],
                 [
                   "content" => $download_cell,
                   "attributes" => [
