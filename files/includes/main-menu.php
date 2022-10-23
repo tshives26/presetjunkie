@@ -340,7 +340,7 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "manage",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("Edit My Presets", "cftp_admin"),
+      "label" => __("Edit Presets", "cftp_admin"),
       "link" => "manage-files.php",
       "icon" => "file",
     ],
