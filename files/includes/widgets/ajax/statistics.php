@@ -37,7 +37,7 @@ $data = [
     // 'uploads_users' => $dates,
     'uploads_clients' => $dates,
     'downloads' => $dates,
-    'downloads_public' => $dates,
+    // 'downloads_public' => $dates,
 ];
 
 // Get data from action log and add to that days's count for each action
@@ -67,8 +67,8 @@ if ( $statement->rowCount() > 0 ) {
                 $type = 'downloads';
             break;
             case 37:
-                $type = 'downloads_public';
-            break;
+            //     $type = 'downloads_public';
+            // break;
         }
         $data[$type][$row['statsDate']] = $row['total'];
     }
@@ -93,12 +93,12 @@ $datasets = [
         'borderColor' => "#f2b705",
         'data' => array_values($data['downloads']),
     ],
-    [
-        'label' => __('Public Downloads'),
-        'fill' => false,
-        'borderColor' => "#1ec4a7",
-        'data' => array_values($data['downloads_public']),
-    ],
+    // [
+    //     'label' => __('Public Downloads'),
+    //     'fill' => false,
+    //     'borderColor' => "#1ec4a7",
+    //     'data' => array_values($data['downloads_public']),
+    // ],
 ];
 
 $response = [
