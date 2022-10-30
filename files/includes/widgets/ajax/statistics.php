@@ -34,7 +34,7 @@ foreach ($period as $key => $date) {
 
 // Make data array data
 $data = [
-    'uploads_users' => $dates,
+    // 'uploads_users' => $dates,
     'uploads_clients' => $dates,
     'downloads' => $dates,
     'downloads_public' => $dates,
@@ -57,8 +57,8 @@ if ( $statement->rowCount() > 0 ) {
     while ( $row = $statement->fetch() ) {
         switch ($row['action']) {
             case 5:
-                $type = 'uploads_users';
-            break;
+                // $type = 'uploads_users';
+            // break;
             case 6:
                 $type = 'uploads_clients';
             break;
@@ -75,20 +75,20 @@ if ( $statement->rowCount() > 0 ) {
 }
 
 $datasets = [
+    // [
+    //     'label' => __('Uploads by users'),
+    //     'fill' => false,
+    //     'borderColor' => "#0094bb",
+    //     'data' => array_values($data['uploads_users']),
+    // ],
     [
-        'label' => __('Uploads by users'),
-        'fill' => false,
-        'borderColor' => "#0094bb",
-        'data' => array_values($data['uploads_users']),
-    ],
-    [
-        'label' => __('Uploads by clients'),
+        'label' => __('Uploads'),
         'fill' => false,
         'borderColor' => "#86ae00",
         'data' => array_values($data['uploads_clients']),
     ],
     [
-        'label' => __('Downloads by known users'),
+        'label' => __('Downloads'),
         'fill' => false,
         'borderColor' => "#f2b705",
         'data' => array_values($data['downloads']),
