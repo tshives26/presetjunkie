@@ -202,13 +202,12 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                 "sortable" => true,
                 "sort_url" => "uploader",
                 "content" => __("Uploader", "cftp_admin"),
-                "hide" => "phone,tablet",
                 "condition" => $conditions["is_not_client"],
               ],
-              [
-                "content" => __("Size", "cftp_admin"),
-                "hide" => "phone",
-              ],
+              // [
+              //   "content" => __("Size", "cftp_admin"),
+              //   "hide" => "phone",
+              // ],
               // [
               //   "sortable" => true,
               //   "sort_url" => "download_count",
@@ -456,12 +455,12 @@ define("TEMPLATE_THUMBNAILS_HEIGHT", "50");
                     "style" => ["width: 7%;"]
                   ],
                 ],
-                [
-                  "content" => $file->size_formatted,
-                  "attributes" => [
-                    "style" => ["width: 4%;"]
-                  ],
-                ],
+                // [
+                //   "content" => $file->size_formatted,
+                //   "attributes" => [
+                //     "style" => ["width: 4%;"]
+                //   ],
+                // ],
                 // [
                 //   "content" => !empty($downloads_table_link)
                 //     ? $downloads_table_link
