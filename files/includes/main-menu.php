@@ -360,8 +360,8 @@ if (current_role_in([9, 8, 7])) {
     "nav" => "ir",
     "level" => [9, 8, 7, 0],
     "main" => [
-      "label" => __("IR Zip (10/2022)", "cftp_admin"),
-      "link" => "/assets/Free_IR_Collection.zip",
+      "label" => __("IR Zip v2 (12/2022)", "cftp_admin"),
+      "link" => "assets/Free_IR_Collection.zip",
       "icon" => "microphone",
     ],
   ];
